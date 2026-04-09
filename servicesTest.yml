@@ -9,4 +9,4 @@ spec:
     port:  80
     nodePort: 30200
   selector:
-    app: APP1
+    app: app1
