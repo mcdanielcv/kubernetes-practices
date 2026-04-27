@@ -1,8 +1,8 @@
 apiVersion: apps/v1
-kind: Deployment 
+kind: Deployment
 metadata:
   name: redis
-  labels: 
+  labels:
     app: app-votacion
 spec:
   replicas: 1
@@ -10,7 +10,7 @@ spec:
     matchLabels:
       name: redis
       app: app-votacion
-  templates:
+  template:
     metadata:
       name: redis
       labels:

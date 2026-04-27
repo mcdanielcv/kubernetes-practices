@@ -10,7 +10,7 @@ spec:
     matchLabels:
       name: worker
       app: app-votacion
-  templates:
+  template:
     metadata:
       name: worker
       labels:
