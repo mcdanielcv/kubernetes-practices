@@ -1,8 +1,8 @@
 apiVersion: apps/v1
-kind: Deployment 
+kind: Deployment
 metadata:
   name: db
-  labels: 
+  labels:
     app: app-votacion
 spec:
   replicas: 1
@@ -20,12 +20,12 @@ spec:
       containers:
       - name: postgres
         image: postgres:9.4
-        env:
+        env: 
         - name: POSTGRES_USER
-          value: posgtres
+          value: postgres 
         - name: POSTGRES_PASSWORD
           value: postgres
-        - name: POSTGRES_HOST_AUT_METHOD    
+        - name: POSTGRES_HOST_AUTH_METHOD
           value: trust
         ports:
         - containerPort: 5432
